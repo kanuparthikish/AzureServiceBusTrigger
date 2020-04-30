@@ -1,0 +1,13 @@
+{
+  "scriptFile" : "../AzureServiceBusFunctions-0.0.1-SNAPSHOT.jar",
+  "entryPoint" : "com.kishore.servicebus.ServiceBusTopicTriggerFunctionStockPortFolioSubB.run",
+  "bindings" : [ {
+    "type" : "serviceBusTrigger",
+    "direction" : "in",
+    "name" : "SUBBTopicItemListner",
+    "dataType" : "binary",
+    "subscriptionName" : "StockAgencyB",
+    "topicName" : "stockquoteprice",
+    "connection" : "serviceBusConnection"
+  } ]
+}

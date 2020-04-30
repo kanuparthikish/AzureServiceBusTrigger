@@ -1,0 +1,12 @@
+{
+  "scriptFile" : "../AzureServiceBusFunctions-0.0.1-SNAPSHOT.jar",
+  "entryPoint" : "com.kishore.servicebus.ServiceBusQueueTriggerFunctionCourse.run",
+  "bindings" : [ {
+    "type" : "serviceBusTrigger",
+    "direction" : "in",
+    "name" : "CourseQueueFirstListner",
+    "queueName" : "coursequeue",
+    "dataType" : "binary",
+    "connection" : "serviceBusConnection"
+  } ]
+}
